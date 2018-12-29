@@ -1,0 +1,22 @@
+{
+  "name": "Dense",
+  "productName": "Dense",
+  "version": "0.0.1",
+  "description": "h256 video converter",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "buikd": "electron-packager . converter"
+  },
+  "author": "Danny Ruchtie",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.16",
+    "electron-builder": "^20.38.4",
+    "electron-packager": "^12.2.0"
+  },
+  "dependencies": {
+    "ffmpeg": "0.0.4",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}

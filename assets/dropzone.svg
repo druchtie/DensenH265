@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="283px" height="283px" viewBox="0 0 283 283" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>dropzone</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="247 40 284 -23.5414352 284 289.541435 247 226"></polygon>
+        <polygon id="path-3" points="-1 39.5414352 36 -24 36 289.08287 -1 225.541435"></polygon>
+        <linearGradient x1="50%" y1="73.0044812%" x2="50%" y2="-51.5169299%" id="linearGradient-4">
+            <stop stop-color="#171717" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-5" points="36 226 247 226 284.516894 283 -1.51689389 283"></polygon>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-6">
+            <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-7" points="35.5168939 -3.98901185e-14 246.516894 -3.98901185e-14 284.033788 40 -2 40"></polygon>
+    </defs>
+    <g id="dropzone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="back" fill="#171717" fill-rule="nonzero" x="0" y="8" width="280" height="247"></rect>
+        <g id="right" fill-rule="nonzero">
+            <use fill="#171717" xlink:href="#path-2"></use>
+            <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+        </g>
+        <g id="right" fill-rule="nonzero" transform="translate(17.500000, 132.541435) scale(-1, 1) translate(-17.500000, -132.541435) ">
+            <use fill="#171717" xlink:href="#path-3"></use>
+            <use fill="url(#linearGradient-1)" xlink:href="#path-3"></use>
+        </g>
+        <g id="bottom" fill-rule="nonzero">
+            <use fill="#171717" xlink:href="#path-5"></use>
+            <use fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+        </g>
+        <g id="bottom" fill-rule="nonzero" transform="translate(141.016894, 20.000000) scale(1, -1) translate(-141.016894, -20.000000) ">
+            <use fill="#171717" xlink:href="#path-7"></use>
+            <use fill="url(#linearGradient-6)" xlink:href="#path-7"></use>
+        </g>
+    </g>
+</svg>

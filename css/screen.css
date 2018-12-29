@@ -1,0 +1,232 @@
+@import "reset.css" screen;
+
+
+:root {
+    --tintcolor: #5D57F5;  /* var(--tintcolor) */
+}
+
+
+html, body{
+	color:rgb(127,127,127);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 0;
+/* 	background: #171717; */
+	background: #111111;
+	-webkit-app-region:drag;
+	backdrop-filter: blur(10px);
+}
+
+
+.container{
+width: 100vw;
+height: 100vh;
+padding: 0;
+margin: 0;
+
+}
+
+#video{ 
+	padding: 1rem .5rem .5rem 1rem;
+	margin-top: 1rem;
+
+}
+
+
+#drop{
+	text-align: center;
+  	display: flex;
+  	width: 16rem;
+  	height:16rem;
+  	align-items: center;
+  	justify-content: center;
+	border:2px solid rgba(127,127,127,.2);
+	border-radius:.25rem;
+	background: url("../assets/dropzone.svg")  no-repeat;
+	background-size: auto 100%; 
+	background-position: center center;
+	
+}
+
+
+#export{
+	position: absolute;
+	top: 6.5rem;
+  	left: 5.6rem;
+  	width: 108px;
+  	height:84px;
+	display: none;
+	transform: rotate(30deg);
+	background:url("../assets/export.png") no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	animation: pulse 1s infinite;
+	overflow: hidden;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, .2);
+}
+
+#export:after {
+  mix-blend-mode: hard-light;
+  animation: shine 5s ease-in-out  infinite;
+  animation-fill-mode: forwards;  
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  background: rgba(255, 255, 255, 0);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.0) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+#export:active:after {
+  opacity: 0;
+}
+
+@keyframes shine{
+  10% {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
+  100% {
+    opacity: 0;
+    top: 200%;
+    left: 200%;
+    transition-property: left, top, opacity;
+  }
+}
+
+
+#export.active{
+	display: block;
+}
+
+.import{
+	width: 16rem;
+	height: 16rem;
+	display: block;
+	background:url("../assets/arrow.svg") center 5rem no-repeat;
+	background-size: 50px;
+}
+
+
+.import span{
+	margin-top: 10rem;
+    width: 16rem;
+    display: block;
+    text-align: center;
+}
+
+.import.active{
+	display: none;
+}
+
+#settings {
+	padding: 1rem 1rem 1rem; 
+	font-size: 12px;
+	height: 6.5rem;
+	width: 100%;
+	padding:1rem;
+}
+
+
+#settings label{
+	font-size: 12px;
+	color:#fff;
+	width: 4.5rem;
+	line-height: 30px;
+	float: left;
+	display: block;
+	clear:both;
+}
+
+#settings select{
+	font-size: 12px;	
+	color:#fff;
+	min-width: 11.5rem;
+	float: left;
+	border-radius: .25rem;
+	border: 1px solid rgba(255, 255, 255, 0);
+	background:#222222 url(../assets/select-bg.svg) right center no-repeat;
+	text-transform: capitalize;
+	background-size:20px;
+}
+
+
+
+.progress-holder{
+	font-size: 12px;
+	line-height: 1rem;	
+	color:rgb(127,127,127);	
+	text-align: left;
+	display: none;
+	width: 100%;
+
+}
+
+.status{
+	background: #f1f1f1;
+	margin: .25rem 0;
+	height: 1rem;
+	width: 100%;
+	display: block;
+	border-radius: .25rem;
+	overflow: hidden;
+}
+
+.progress{
+	color:#fff;	
+	height: 1rem;
+	background:var(--tintcolor);	
+	display: block;
+	width: 0%;
+	padding: 0 .5rem;
+
+}
+
+
+
+.progress span{
+	margin: 0 1rem;
+}	
+
+
+#settings.active .form-holder{
+	display: none;
+}
+
+
+
+#settings.active .progress-holder{
+	display: block;
+}
+
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
